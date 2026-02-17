@@ -1,0 +1,286 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+button, input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* End CSS Reset */
+
+.summer-card {
+    display: block;
+}
+
+.summer-card img {
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summer-card img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.summer-card-text {
+    font-family:'Courier New', Courier, monospace
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 100px;
+    font-family: "Playwrite AT", cursive
+}
+
+.description { 
+    text-align: center;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace
+}
+
+.summer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.summer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summer_icon {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#main_background {
+    background-image: url("background5.jpeg");
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    margin: 50px;
+    padding: 50px;
+    background-image: url("background3.jpeg");
+    border-radius: 20px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+
+}
+
+.hideText {
+    display: block;
+}
+
+.hidden {
+    display:none;
+}
+
+h3 {
+    cursor: pointer;
+}
+
+h3:hover {
+    opacity: 0.7;
+}
+
+.hideText img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.summer-page {
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url("background4.jpeg")
+}
+
+.summer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background: lightblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.summer-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.summer-header h1 {
+    font-family: "Playwrite AT", cursive;
+    font-size: 48px;
+    color: #2d3436;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.summer-section {
+    margin-bottom: 50px;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.summer-section h2 {
+    font-family: "Playwrite AT", cursive;
+    font-size: 36px;
+    color: #2d3436;
+    margin-bottom: 25px;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dfe6e9;
+}
+
+.summer-section h3 {
+    font-size: 22px;
+    color: #636e72;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.summer-section h3:hover {
+    background: #f0f0f0;
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hideText {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.hideText p {
+    color: #2d3436;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+}
+
+.hideText img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.hideText img:hover {
+    transform: scale(1.03);
+}
+
+.photo-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.photo-gallery:not(.hidden) {
+    display: grid;
+}
+
+
+.photo-gallery p {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border: 3px solid white;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
